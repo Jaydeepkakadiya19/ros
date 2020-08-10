@@ -1,0 +1,8 @@
+prefix=/home/jaydeep/catkin_ws/devel
+
+Name: pak
+Description: Description of pak
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/jaydeep/catkin_ws/install
+
+Name: robospect_pad
+Description: Description of robospect_pad
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

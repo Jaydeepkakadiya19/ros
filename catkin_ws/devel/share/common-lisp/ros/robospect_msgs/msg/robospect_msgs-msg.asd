@@ -1,0 +1,26 @@
+
+(cl:in-package :asdf)
+
+(defsystem "robospect_msgs-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :geometry_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "ControlState" :depends-on ("_package_ControlState"))
+    (:file "_package_ControlState" :depends-on ("_package"))
+    (:file "MissionCommand" :depends-on ("_package_MissionCommand"))
+    (:file "_package_MissionCommand" :depends-on ("_package"))
+    (:file "MissionPoint" :depends-on ("_package_MissionPoint"))
+    (:file "_package_MissionPoint" :depends-on ("_package"))
+    (:file "MissionState" :depends-on ("_package_MissionState"))
+    (:file "_package_MissionState" :depends-on ("_package"))
+    (:file "PadStatus" :depends-on ("_package_PadStatus"))
+    (:file "_package_PadStatus" :depends-on ("_package"))
+    (:file "PlatformCommand" :depends-on ("_package_PlatformCommand"))
+    (:file "_package_PlatformCommand" :depends-on ("_package"))
+    (:file "PlatformResponse" :depends-on ("_package_PlatformResponse"))
+    (:file "_package_PlatformResponse" :depends-on ("_package"))
+    (:file "PlatformState" :depends-on ("_package_PlatformState"))
+    (:file "_package_PlatformState" :depends-on ("_package"))
+    (:file "State" :depends-on ("_package_State"))
+    (:file "_package_State" :depends-on ("_package"))
+  ))

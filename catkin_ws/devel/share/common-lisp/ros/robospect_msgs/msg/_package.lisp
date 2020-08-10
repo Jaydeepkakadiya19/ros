@@ -1,0 +1,23 @@
+(cl:defpackage robospect_msgs-msg
+  (:use )
+  (:export
+   "<CONTROLSTATE>"
+   "CONTROLSTATE"
+   "<MISSIONCOMMAND>"
+   "MISSIONCOMMAND"
+   "<MISSIONPOINT>"
+   "MISSIONPOINT"
+   "<MISSIONSTATE>"
+   "MISSIONSTATE"
+   "<PADSTATUS>"
+   "PADSTATUS"
+   "<PLATFORMCOMMAND>"
+   "PLATFORMCOMMAND"
+   "<PLATFORMRESPONSE>"
+   "PLATFORMRESPONSE"
+   "<PLATFORMSTATE>"
+   "PLATFORMSTATE"
+   "<STATE>"
+   "STATE"
+  ))
+

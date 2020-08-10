@@ -1,0 +1,8 @@
+prefix=/home/jaydeep/catkin_ws/install
+
+Name: robospect_msgs
+Description: Description of robospect_msgs
+Version: 0.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

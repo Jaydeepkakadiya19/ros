@@ -1,0 +1,8 @@
+prefix=/home/jaydeep/catkin_ws/install
+
+Name: robospect_robot_control
+Description: Description of robospect_robot_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
