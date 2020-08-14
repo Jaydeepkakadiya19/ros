@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="gui" default="false"/>
+  <!-- start gazebo simulation -->
+  <include file="$(find robospect_gazebo)/launch/robospect.launch">
+  	<arg name="gui" value="$(arg gui)" />
+  </include>
+
+  <!-- start robot_control node -->
+  <include file="$(find robospect_robot_control)/launch/robospect_robot_control.launch"/>
+  
+  <!-- Filters laser range -->
+  <include file="$(find robospect_sim_bringup)/launch/laser_filters.launch"/>
+  
+  <!-- start robot_control node -->
+  <!--include file="$(find robospect_sim_bringup)/launch/laserscan_multi_merger.launch"/-->
+
+  <!-- start joystick -->
+  <include file="$(find robospect_pad)/launch/robospect_pad.launch"/>
+
+</launch>

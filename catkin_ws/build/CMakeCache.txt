@@ -17,12 +17,6 @@
 //Build shared libraries (DLLs).
 BUILD_SHARED_LIBS:BOOL=ON
 
-//The directory containing a CMake configuration file for Boost.
-Boost_DIR:PATH=Boost_DIR-NOTFOUND
-
-//Path to a file.
-Boost_INCLUDE_DIR:PATH=/usr/include
-
 //List of ';' separated packages to exclude
 CATKIN_BLACKLIST_PACKAGES:STRING=
 
@@ -277,25 +271,14 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
-//Value Computed by CMake
-ackermann_msgs_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/ackermann_msgs
-
-ackermann_msgs_DIR:PATH=
-
-//Value Computed by CMake
-ackermann_msgs_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/ackermann_msgs
+//The directory containing a CMake configuration file for ackermann_msgs.
+ackermann_msgs_DIR:PATH=/opt/ros/kinetic/share/ackermann_msgs/cmake
 
 //The directory containing a CMake configuration file for actionlib.
 actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
 
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
-
-//Value Computed by CMake
-beginner_tutorials_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/beginner_tutorials
-
-//Value Computed by CMake
-beginner_tutorials_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/beginner_tutorials
 
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
@@ -307,10 +290,10 @@ class_loader_DIR:PATH=/opt/ros/kinetic/share/class_loader/cmake
 cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 
 //Value Computed by CMake
-crane_moveit_config_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common/crane_moveit_config
+crane_moveit_config_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common-master/crane_moveit_config
 
 //Value Computed by CMake
-crane_moveit_config_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common/crane_moveit_config
+crane_moveit_config_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common-master/crane_moveit_config
 
 //The directory containing a CMake configuration file for diagnostic_msgs.
 diagnostic_msgs_DIR:PATH=/opt/ros/kinetic/share/diagnostic_msgs/cmake
@@ -320,48 +303,6 @@ diagnostic_updater_DIR:PATH=/opt/ros/kinetic/share/diagnostic_updater/cmake
 
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/kinetic/share/dynamic_reconfigure/cmake
-
-//Value Computed by CMake
-fanuc_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/fanuc/fanuc
-
-//Value Computed by CMake
-fanuc_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/fanuc/fanuc
-
-//Value Computed by CMake
-fanuc_cr35ia_support_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/fanuc/fanuc_cr35ia_support
-
-//Value Computed by CMake
-fanuc_cr35ia_support_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/fanuc/fanuc_cr35ia_support
-
-//Value Computed by CMake
-fanuc_cr7ia_moveit_config_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/fanuc/fanuc_cr7ia_moveit_config
-
-//Value Computed by CMake
-fanuc_cr7ia_moveit_config_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/fanuc/fanuc_cr7ia_moveit_config
-
-//Value Computed by CMake
-fanuc_cr7ia_support_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/fanuc/fanuc_cr7ia_support
-
-//Value Computed by CMake
-fanuc_cr7ia_support_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/fanuc/fanuc_cr7ia_support
-
-//Value Computed by CMake
-fanuc_cr7ial_moveit_config_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/fanuc/fanuc_cr7ial_moveit_config
-
-//Value Computed by CMake
-fanuc_cr7ial_moveit_config_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/fanuc/fanuc_cr7ial_moveit_config
-
-//Value Computed by CMake
-fanuc_driver_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/fanuc/fanuc_driver
-
-//Value Computed by CMake
-fanuc_driver_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/fanuc/fanuc_driver
-
-//Value Computed by CMake
-fanuc_resources_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/fanuc/fanuc_resources
-
-//Value Computed by CMake
-fanuc_resources_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/fanuc/fanuc_resources
 
 //The directory containing a CMake configuration file for filters.
 filters_DIR:PATH=/opt/ros/kinetic/share/filters/cmake
@@ -433,33 +374,6 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
-//Value Computed by CMake
-industrial_core_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/industrial_core/industrial_core
-
-//Value Computed by CMake
-industrial_core_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/industrial_core/industrial_core
-
-//Value Computed by CMake
-industrial_deprecated_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/industrial_core/industrial_deprecated
-
-//Value Computed by CMake
-industrial_deprecated_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/industrial_core/industrial_deprecated
-
-//Value Computed by CMake
-industrial_msgs_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/industrial_core/industrial_msgs
-
-//Value Computed by CMake
-industrial_msgs_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/industrial_core/industrial_msgs
-
-//The directory containing a CMake configuration file for industrial_robot_client.
-industrial_robot_client_DIR:PATH=industrial_robot_client_DIR-NOTFOUND
-
-//Value Computed by CMake
-industrial_trajectory_filters_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/industrial_core/industrial_trajectory_filters
-
-//Value Computed by CMake
-industrial_trajectory_filters_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/industrial_core/industrial_trajectory_filters
-
 //The directory containing a CMake configuration file for kdl_parser.
 kdl_parser_DIR:PATH=/opt/ros/kinetic/share/kdl_parser/cmake
 
@@ -476,7 +390,7 @@ laser_assembler_DIR:PATH=/opt/ros/kinetic/share/laser_assembler/cmake
 laser_geometry_DIR:PATH=/opt/ros/kinetic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/librostime.so
+lib:FILEPATH=/opt/ros/kinetic/lib/libdynamic_reconfigure_config_init_mutex.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
@@ -487,126 +401,101 @@ message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
 
-//The directory containing a CMake configuration file for moveit_ros_planning.
-moveit_ros_planning_DIR:PATH=moveit_ros_planning_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/kinetic/share/nav_msgs/cmake
 
 //Value Computed by CMake
-p1_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/p1
+pa10_description_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common-master/pa10_description
 
 //Value Computed by CMake
-p1_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/p1
-
-//Value Computed by CMake
-pa10_description_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common/pa10_description
-
-//Value Computed by CMake
-pa10_description_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common/pa10_description
-
-//Value Computed by CMake
-pak_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/pak
-
-//Value Computed by CMake
-pak_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/pak
+pa10_description_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common-master/pa10_description
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
 
 //Value Computed by CMake
-robospect_common_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common/robospect_common
+robospect_common_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common-master/robospect_common
 
 //Value Computed by CMake
-robospect_common_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common/robospect_common
+robospect_common_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common-master/robospect_common
 
 //Value Computed by CMake
-robospect_control_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim/robospect_control
+robospect_control_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim-master/robospect_control
 
 //The directory containing a CMake configuration file for robospect_control.
 robospect_control_DIR:PATH=/home/jaydeep/catkin_ws/devel/share/robospect_control/cmake
 
 //Value Computed by CMake
-robospect_control_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim/robospect_control
+robospect_control_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim-master/robospect_control
 
 //Value Computed by CMake
-robospect_description_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common/robospect_description
+robospect_description_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common-master/robospect_description
 
 //The directory containing a CMake configuration file for robospect_description.
 robospect_description_DIR:PATH=/home/jaydeep/catkin_ws/devel/share/robospect_description/cmake
 
 //Value Computed by CMake
-robospect_description_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common/robospect_description
+robospect_description_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common-master/robospect_description
 
 //Value Computed by CMake
-robospect_gazebo_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim/robospect_gazebo
+robospect_gazebo_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim-master/robospect_gazebo
 
 //Value Computed by CMake
-robospect_gazebo_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim/robospect_gazebo
+robospect_gazebo_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim-master/robospect_gazebo
 
 //Value Computed by CMake
-robospect_laser_assembler_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common/robospect_laser_assembler
+robospect_laser_assembler_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common-master/robospect_laser_assembler
 
 //Value Computed by CMake
-robospect_laser_assembler_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common/robospect_laser_assembler
+robospect_laser_assembler_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common-master/robospect_laser_assembler
 
 //Value Computed by CMake
-robospect_moveit_config_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common/robospect_moveit_config
+robospect_moveit_config_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common-master/robospect_moveit_config
 
 //Value Computed by CMake
-robospect_moveit_config_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common/robospect_moveit_config
+robospect_moveit_config_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common-master/robospect_moveit_config
 
 //Value Computed by CMake
-robospect_msgs_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common/robospect_msgs
+robospect_msgs_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common-master/robospect_msgs
 
-robospect_msgs_DIR:PATH=
-
-//Value Computed by CMake
-robospect_msgs_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common/robospect_msgs
+//The directory containing a CMake configuration file for robospect_msgs.
+robospect_msgs_DIR:PATH=/home/jaydeep/catkin_ws/devel/share/robospect_msgs/cmake
 
 //Value Computed by CMake
-robospect_pad_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common/robospect_pad
+robospect_msgs_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common-master/robospect_msgs
 
 //Value Computed by CMake
-robospect_pad_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common/robospect_pad
+robospect_pad_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_common-master/robospect_pad
 
 //Value Computed by CMake
-robospect_robot_control_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim/robospect_robot_control
+robospect_pad_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_common-master/robospect_pad
 
 //Value Computed by CMake
-robospect_robot_control_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim/robospect_robot_control
+robospect_robot_control_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim-master/robospect_robot_control
 
 //Value Computed by CMake
-robospect_sim_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim/robospect_sim
+robospect_robot_control_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim-master/robospect_robot_control
 
 //Value Computed by CMake
-robospect_sim_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim/robospect_sim
+robospect_sim_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim-master/robospect_sim
 
 //Value Computed by CMake
-robospect_sim_bringup_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim/robospect_sim_bringup
+robospect_sim_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim-master/robospect_sim
 
 //Value Computed by CMake
-robospect_sim_bringup_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim/robospect_sim_bringup
+robospect_sim_bringup_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robospect_sim-master/robospect_sim_bringup
+
+//Value Computed by CMake
+robospect_sim_bringup_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robospect_sim-master/robospect_sim_bringup
 
 //The directory containing a CMake configuration file for robot_state_publisher.
 robot_state_publisher_DIR:PATH=/opt/ros/kinetic/share/robot_state_publisher/cmake
 
-//Value Computed by CMake
-robotnik_msgs_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robotnik_msgs
-
-robotnik_msgs_DIR:PATH=
-
-//Value Computed by CMake
-robotnik_msgs_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robotnik_msgs
-
-//Value Computed by CMake
-robotnik_sensors_BINARY_DIR:STATIC=/home/jaydeep/catkin_ws/build/robotnik_sensors
+//The directory containing a CMake configuration file for robotnik_msgs.
+robotnik_msgs_DIR:PATH=/opt/ros/kinetic/share/robotnik_msgs/cmake
 
 //The directory containing a CMake configuration file for robotnik_sensors.
-robotnik_sensors_DIR:PATH=/home/jaydeep/catkin_ws/devel/share/robotnik_sensors/cmake
-
-//Value Computed by CMake
-robotnik_sensors_SOURCE_DIR:STATIC=/home/jaydeep/catkin_ws/src/robotnik_sensors
+robotnik_sensors_DIR:PATH=/opt/ros/kinetic/share/robotnik_sensors/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
@@ -628,9 +517,6 @@ rosgraph_DIR:PATH=/opt/ros/kinetic/share/rosgraph/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/kinetic/share/rosgraph_msgs/cmake
-
-//The directory containing a CMake configuration file for roslaunch.
-roslaunch_DIR:PATH=/opt/ros/kinetic/share/roslaunch/cmake
 
 //The directory containing a CMake configuration file for roslib.
 roslib_DIR:PATH=/opt/ros/kinetic/share/roslib/cmake
@@ -685,10 +571,6 @@ xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
 # INTERNAL cache entries
 ########################
 
-//ADVANCED property for variable: Boost_DIR
-Boost_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_INCLUDE_DIR
-Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //catkin environment
 CATKIN_ENV:INTERNAL=/home/jaydeep/catkin_ws/build/catkin_generated/env_cached.sh
 CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/jaydeep/catkin_ws/build/test_results
@@ -786,7 +668,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -857,13 +739,5 @@ PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
-SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread;-lpthread;-lpthread
-//Components requested for this build tree.
-_Boost_COMPONENTS_SEARCHED:INTERNAL=
-//Last used Boost_INCLUDE_DIR value.
-_Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/include
-//Last used Boost_NAMESPACE value.
-_Boost_NAMESPACE_LAST:INTERNAL=boost
-//Last used Boost_USE_MULTITHREADED value.
-_Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
+SDL_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDLmain.a;/usr/lib/x86_64-linux-gnu/libSDL.so;-lpthread
 

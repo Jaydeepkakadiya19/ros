@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<robot name="robospect" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+	<!-- ***************** -->
+	<!-- Imported elements -->
+	<!-- ***************** -->
+
+	<!-- First we import all posible elements defined in the urdf.xacro files. All these elements are defined as macro:xacros -->
+
+	<!-- Import Robospect Base -->
+	<xacro:include filename="$(find robospect_description)/urdf/bases/robospect_base.urdf.xacro" />
+	
+	<xacro:include filename="$(find pa10_description)/urdf/pa10.urdf.xacro" />
+
+	<!-- Import Robospect Crane -->
+	<xacro:include filename="$(find robospect_description)/urdf/bases/robospect_crane.urdf.xacro" />
+
+	<!-- Import Robospect Wheels -->
+	<xacro:include filename="$(find robospect_description)/urdf/wheels/standard_wheel.urdf.xacro" />
+	
+	<!-- Import Robospect PTU -->
+	<xacro:include filename="$(find robospect_description)/urdf/bases/ptu_frame_v1.urdf.xacro" />
+
+	<!-- Import all available sensors -->
+	<xacro:include filename="$(find robotnik_sensors)/urdf/all_sensors.urdf.xacro" />
+	
+	<xacro:include filename="$(find robospect_description)/urdf/bases/camera_frame_v2.urdf.xacro" />
+
+	<!-- ***************** -->
+	<!-- Global parameters -->
+	<!-- ***************** -->
+
+	<xacro:property name="PI" value="3.1415926535897931"/>
+
+	<!-- Wheel parameters -->
+
+
+	<!-- *************** -->
+	<!-- Robots Elements -->
+	<!-- *************** -->
+
+	<!-- Here we create the robot elements using the xacro:macros imported at the beggining of this file -->
+
+	<!-- Genie base -->
+	<xacro:robospect_base name="robospect_base" publish_bf="true" />
+
+	<xacro:robospect_crane parent="base_link">
+		<origin xyz="-0.073 0 0.287" rpy="0 0 0" />
+	</xacro:robospect_crane>
+	<!-- Gazebo ros control pluggins -->
+	<xacro:ros_control/>
+
+
+	<!-- WHEELS -->
+
+  <!-- Wheels -->
+  <xacro:wheels parent="base_link"/>
+
+	<!-- SENSORS -->
+	<xacro:sensor_imu prefix = "imu" parent="base_link">     
+		<origin xyz="0.0 0.0 0.170" rpy="0 0 0"/>
+	</xacro:sensor_imu>
+
+	<xacro:sensor_sick_s3000 prefix="sick_front" parent="base_link">
+		<origin xyz="1.058 0.0 0.0" rpy="0 0 0"/>
+	</xacro:sensor_sick_s3000>
+	<xacro:sensor_sick_s3000 prefix="sick_rear" parent="base_link">
+		<origin xyz="-1.058 0.0 0.0" rpy="0 0 ${PI}"/>
+	</xacro:sensor_sick_s3000>
+	
+	<xacro:sensor_axis prefix="camera" parent="first_link">
+		<origin xyz="0.573 0 0.313" rpy="0 ${PI/180} 0"/>
+	</xacro:sensor_axis>
+	
+	<!-- NAV200 -->
+    <joint name="nav200_laser_joint" type="fixed">
+	  <origin xyz="0.880 0.0 0.408" rpy="0 0 0"/>
+      <parent link="base_link"/>
+      <child link="nav200_laser_link"/>
+	 </joint>
+  
+	 <link name="nav200_laser_link">
+		<inertial>
+			<mass value="1e-5" />
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+		</inertial>
+	 </link>
+
+	<xacro:sensor_imu prefix="imu_crane" parent="tip_link">
+		<origin xyz="0.7 0.0 0.153" rpy="0 0 0"/>
+	</xacro:sensor_imu>
+	
+	<!-- ARM UC3M -->
+    <joint name="arm_joint" type="fixed">
+	  <origin xyz="0.74933 0.0 0.153" rpy="0 0 0.0"/>
+      <parent link="tip_link"/>
+      <child link="arm_link"/>
+	 </joint>
+  
+	 <link name="arm_link">
+	 </link>
+	 
+	 <xacro:camera_frame name="vision" parent="tilt_link">
+		<origin xyz="0 0 0" rpy="0 0 0"/>
+	 </xacro:camera_frame>
+	 
+	 <xacro:mitsubishi_pa10  parent="arm_link">
+		<origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+	</xacro:mitsubishi_pa10>
+
+
+	<!-- Robospect_ptu -->
+	<xacro:robospect_ptu parent="arm_link">
+		<origin xyz="-0.45335 0 0.158" rpy="0 0 0"/>
+	</xacro:robospect_ptu>
+	
+	<!-- TIM 571 -->
+	<xacro:sensor_sick_tim571 prefix="tim571_" parent="arm_link">
+		<origin xyz="0.145 -0.302 -0.195" rpy="${PI} -1.082 0"/>
+	</xacro:sensor_sick_tim571>
+
+
+
+
+
+</robot>

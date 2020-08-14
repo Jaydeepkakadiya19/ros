@@ -1,0 +1,891 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 84
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /MotionPlanning1
+        - /MotionPlanning1/Scene Robot1
+        - /MotionPlanning1/Planning Request1
+        - /TF1/Frames1
+        - /crack1
+      Splitter Ratio: 0.399535
+    Tree Height: 365
+  - Class: rviz/Help
+    Name: Help
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: moveit_rviz_plugin/MotionPlanning
+      Enabled: true
+      Move Group Namespace: ""
+      MoveIt_Goal_Tolerance: 0
+      MoveIt_Planning_Attempts: 10
+      MoveIt_Planning_Time: 5
+      MoveIt_Use_Constraint_Aware_IK: true
+      MoveIt_Warehouse_Host: 127.0.0.1
+      MoveIt_Warehouse_Port: 33829
+      Name: MotionPlanning
+      Planned Path:
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          base_footprint:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera_pan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_tilt_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          center_rear_steering_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          fifth_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          first_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fourth_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          fourth_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          grasshopper3_bottom_left_camera_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_left_camera_lens_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_left_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_right_camera_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_right_camera_lens_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_right_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_left_camera_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_left_camera_lens_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_left_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_right_camera_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_right_camera_lens_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_right_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          hokuyo_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          imu_crane_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          imu_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_front_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_rear_steering_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_rear_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          nav200_laser_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_front_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_rear_steering_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_rear_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          second_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          seventh_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          sick_front_laser_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          sick_rear_laser_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          sixth_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          third_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          vision_camera_frame_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          vision_top_camera_frame_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Loop Animation: false
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+        Show Trail: false
+        State Display Time: 0.05 s
+        Trajectory Topic: move_group/display_planned_path
+      Planning Metrics:
+        Payload: 1
+        Show Joint Torques: false
+        Show Manipulability: false
+        Show Manipulability Index: false
+        Show Weight Limit: false
+        TextHeight: 0.08
+      Planning Request:
+        Colliding Link Color: 255; 0; 0
+        Goal State Alpha: 1
+        Goal State Color: 250; 128; 0
+        Interactive Marker Size: 0.2
+        Joint Violation Color: 255; 0; 255
+        Planning Group: crane_arm
+        Query Goal State: false
+        Query Start State: false
+        Show Workspace: false
+        Start State Alpha: 1
+        Start State Color: 0; 255; 0
+      Planning Scene Topic: move_group/monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 1
+        Scene Color: 50; 230; 50
+        Scene Display Time: 0.2
+        Show Scene Geometry: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Scene Robot:
+        Attached Body Color: 150; 50; 150
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          base_footprint:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera_pan_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera_tilt_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          center_rear_steering_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          fifth_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          first_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fourth_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          fourth_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          grasshopper3_bottom_left_camera_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_left_camera_lens_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_left_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_right_camera_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_right_camera_lens_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_bottom_right_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_left_camera_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_left_camera_lens_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_left_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_right_camera_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_right_camera_lens_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          grasshopper3_top_right_camera_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          hokuyo_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          imu_crane_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          imu_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_front_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          left_rear_steering_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          left_rear_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link5:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link6:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link7:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          nav200_laser_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_front_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          right_rear_steering_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          right_rear_wheel_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          second_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          seventh_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          sick_front_laser_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          sick_rear_laser_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          sixth_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          third_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          vision_camera_frame_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          vision_top_camera_frame_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Value: true
+    - Class: rviz/InteractiveMarkers
+      Enable Transparency: true
+      Enabled: true
+      Name: InteractiveMarkers
+      Show Axes: false
+      Show Descriptions: true
+      Show Visual Aids: false
+      Update Topic: /mission_waypoints/update
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        arm_link:
+          Value: true
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        camera_link:
+          Value: true
+        camera_pan_link:
+          Value: true
+        camera_tilt_link:
+          Value: true
+        center_rear_steering_link:
+          Value: true
+        fifth_link:
+          Value: true
+        first_link:
+          Value: true
+        fourth_base_link:
+          Value: true
+        fourth_link:
+          Value: true
+        grasshopper3_bottom_left_camera_base_link:
+          Value: true
+        grasshopper3_bottom_left_camera_lens_link:
+          Value: true
+        grasshopper3_bottom_left_camera_link:
+          Value: true
+        grasshopper3_bottom_right_camera_base_link:
+          Value: true
+        grasshopper3_bottom_right_camera_lens_link:
+          Value: true
+        grasshopper3_bottom_right_camera_link:
+          Value: true
+        grasshopper3_top_left_camera_base_link:
+          Value: true
+        grasshopper3_top_left_camera_lens_link:
+          Value: true
+        grasshopper3_top_left_camera_link:
+          Value: true
+        grasshopper3_top_right_camera_base_link:
+          Value: true
+        grasshopper3_top_right_camera_lens_link:
+          Value: true
+        grasshopper3_top_right_camera_link:
+          Value: true
+        hokuyo_link:
+          Value: true
+        imu_crane_link:
+          Value: true
+        imu_link:
+          Value: true
+        left_front_wheel_link:
+          Value: true
+        left_rear_steering_link:
+          Value: true
+        left_rear_wheel_link:
+          Value: true
+        link0:
+          Value: true
+        link1:
+          Value: true
+        link2:
+          Value: true
+        link3:
+          Value: true
+        link4:
+          Value: true
+        link5:
+          Value: true
+        link6:
+          Value: true
+        link7:
+          Value: true
+        map:
+          Value: true
+        nav200_laser_link:
+          Value: true
+        odom:
+          Value: true
+        right_front_wheel_link:
+          Value: true
+        right_rear_steering_link:
+          Value: true
+        right_rear_wheel_link:
+          Value: true
+        second_link:
+          Value: true
+        seventh_link:
+          Value: true
+        sick_front_laser_link:
+          Value: true
+        sick_rear_laser_link:
+          Value: true
+        sixth_link:
+          Value: true
+        third_link:
+          Value: true
+        tip_link:
+          Value: true
+        vision_camera_frame_link:
+          Value: true
+        vision_top_camera_frame_link:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          odom:
+            base_footprint:
+              base_link:
+                center_rear_steering_link:
+                  {}
+                first_link:
+                  camera_link:
+                    camera_pan_link:
+                      camera_tilt_link:
+                        {}
+                  second_link:
+                    third_link:
+                      fourth_base_link:
+                        fourth_link:
+                          fifth_link:
+                            sixth_link:
+                              seventh_link:
+                                tip_link:
+                                  arm_link:
+                                    link0:
+                                      link1:
+                                        link2:
+                                          link3:
+                                            link4:
+                                              link5:
+                                                hokuyo_link:
+                                                  {}
+                                                link6:
+                                                  link7:
+                                                    {}
+                                    vision_camera_frame_link:
+                                      grasshopper3_bottom_left_camera_base_link:
+                                        grasshopper3_bottom_left_camera_link:
+                                          grasshopper3_bottom_left_camera_lens_link:
+                                            {}
+                                      grasshopper3_bottom_right_camera_base_link:
+                                        grasshopper3_bottom_right_camera_link:
+                                          grasshopper3_bottom_right_camera_lens_link:
+                                            {}
+                                      vision_top_camera_frame_link:
+                                        grasshopper3_top_left_camera_base_link:
+                                          grasshopper3_top_left_camera_link:
+                                            grasshopper3_top_left_camera_lens_link:
+                                              {}
+                                        grasshopper3_top_right_camera_base_link:
+                                          grasshopper3_top_right_camera_link:
+                                            grasshopper3_top_right_camera_lens_link:
+                                              {}
+                                  imu_crane_link:
+                                    {}
+                imu_link:
+                  {}
+                left_front_wheel_link:
+                  {}
+                left_rear_steering_link:
+                  left_rear_wheel_link:
+                    {}
+                nav200_laser_link:
+                  {}
+                right_front_wheel_link:
+                  {}
+                right_rear_steering_link:
+                  right_rear_wheel_link:
+                    {}
+                sick_front_laser_link:
+                  {}
+                sick_rear_laser_link:
+                  {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 255; 0; 0
+      Enabled: true
+      History Length: 1
+      Name: crack
+      Radius: 0.05
+      Topic: /robospect_platform_mission_manager/crack
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 0; 170; 0
+      Enabled: true
+      History Length: 1
+      Name: crack_approach_crane
+      Radius: 0.1
+      Topic: /robospect_platform_mission_manager/crack_approach_crane
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 204; 41; 204
+      Enabled: true
+      History Length: 1
+      Name: crack_approach_arm
+      Radius: 0.1
+      Topic: /robospect_platform_mission_manager/crack_approach_arm
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: LaserScan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.01
+      Style: Flat Squares
+      Topic: /laser_scan
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.01
+      Style: Flat Squares
+      Topic: /cloud
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: base_footprint
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+  Value: true
+  Views:
+    Current:
+      Class: rviz/XYOrbit
+      Distance: 5.06409
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 4.0428
+        Y: 1.33166
+        Z: 3.7998e-06
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.439797
+      Target Frame: base_footprint
+      Value: XYOrbit (rviz)
+      Yaw: 4.46359
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1028
+  Help:
+    collapsed: false
+  Hide Left Dock: false
+  Hide Right Dock: false
+  Motion Planning:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003befc0200000005fb000000100044006900730070006c006100790073010000002800000202000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000230000001b6000001ab00ffffff0000046d000003be00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1828
+  X: 55
+  Y: 14

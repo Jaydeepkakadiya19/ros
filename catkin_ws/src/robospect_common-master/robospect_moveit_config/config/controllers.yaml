@@ -1,0 +1,24 @@
+controller_list:
+  - name: /rt_traj_exe
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - crane_first_joint
+      - crane_second_joint
+      - crane_third_joint
+      - crane_fourth_joint
+      - crane_sixth_joint
+      - crane_tip_joint
+  - name: /pa10_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - S1
+      - S2
+      - S3
+      - E1
+      - E2
+      - W1
+      - W2

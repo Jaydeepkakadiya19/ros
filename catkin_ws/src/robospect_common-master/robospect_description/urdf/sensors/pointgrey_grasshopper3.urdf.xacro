@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<robot name="robospect" xmlns:xacro="http://www.ros.org/wiki/xacro">
+	
+	
+	<xacro:property name="camera_length_x" value="0.0575" />
+	<xacro:property name="camera_length_y" value="0.044" />
+	<xacro:property name="camera_length_z" value="0.029" />
+  
+	<xacro:macro name="pointgrey_grasshopper3" params="name parent *origin">
+
+	<!-- CAMERA BASE_LINK -->
+	<link name="${name}_camera_base_link">
+		<visual>
+			<origin xyz="0 0 ${camera_length_z/2.0}" rpy="0 0 0" />
+			<geometry>
+				<box size="${camera_length_x} ${camera_length_y} ${camera_length_z}" />
+			</geometry>
+				<material name="Cyan">
+			<color rgba="0 1.0 1.0 1.0"/>
+			</material>
+	  </visual>
+	</link>
+  
+	<joint name="${name}_camera_base_joint" type="fixed">
+	  <xacro:insert_block name="origin" />
+	  <parent link="${parent}"/>
+	  <child link="${name}_camera_base_link"/>
+	</joint>
+	
+	
+	<link name="${name}_camera_link">
+		
+	</link>
+  
+	<joint name="${name}_camera_joint" type="fixed">
+	  <origin xyz="0.02875 0 0.0145" rpy="0 -1.5707 0" /> 
+	  <parent link="${name}_camera_base_link"/>
+	  <child link="${name}_camera_link"/>
+	</joint>
+
+	<link name="${name}_camera_lens_link">
+
+	</link>
+  
+	<joint name="${name}_camera_lens_joint" type="fixed">
+	  <origin xyz="0.0 0 0.0" rpy="0 0 -1.5707" /> 
+	  <parent link="${name}_camera_link"/>
+	  <child link="${name}_camera_lens_link"/>
+	</joint>
+
+	
+
+  </xacro:macro>
+</robot>

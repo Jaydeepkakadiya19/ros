@@ -67,7 +67,7 @@ set(robospect_laser_assembler_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(robospect_laser_assembler_SOURCE_PREFIX /home/jaydeep/catkin_ws/src/robospect_common/robospect_laser_assembler)
+  set(robospect_laser_assembler_SOURCE_PREFIX /home/jaydeep/catkin_ws/src/robospect_common-master/robospect_laser_assembler)
   set(robospect_laser_assembler_DEVEL_PREFIX /home/jaydeep/catkin_ws/devel)
   set(robospect_laser_assembler_INSTALL_PREFIX "")
   set(robospect_laser_assembler_PREFIX ${robospect_laser_assembler_DEVEL_PREFIX})
@@ -110,7 +110,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'robospect_laser_assembler' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'robospect_laser_assembler' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/jaydeep/catkin_ws/src/robospect_common/robospect_laser_assembler/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'robospect_laser_assembler' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/jaydeep/catkin_ws/src/robospect_common-master/robospect_laser_assembler/${idir}'.  ${_report}")
     endif()
     _list_append_unique(robospect_laser_assembler_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jaydeep/catkin_ws/devel/lib;/home/jaydeep/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/jaydeep/catkin_ws/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
