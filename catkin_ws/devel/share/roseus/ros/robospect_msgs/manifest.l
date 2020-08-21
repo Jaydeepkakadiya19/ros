@@ -8,3 +8,6 @@
 (ros::load-ros-package "geometry_msgs")
 (ros::load-ros-package "std_msgs")
 (ros::load-ros-package "robospect_msgs")
+(ros::load-ros-package "tf")
+(ros::load-ros-package "nav_msgs")
+
